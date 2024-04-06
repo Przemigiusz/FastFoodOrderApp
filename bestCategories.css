@@ -11,33 +11,6 @@
     gap: 3rem;
 }
 
-.best-categories-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.best-categories-title {
-    margin: 0;
-    font-size: 3rem;
-}
-
-.best-categories-title>.colored {
-    color: var(--tertiary-color);
-}
-
-.best-categories-title>.new-line {
-    display: block;
-}
-
-.best-categories p {
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin: 0;
-}
-
 .best-categories-offer {
     display: flex;
     flex-direction: row;
@@ -100,14 +73,5 @@
     .best-categories-offer {
         flex-direction: column;
         gap: 3rem;
-    }
-}
-
-@Media (width < 750px) {
-    .best-categories-header {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        gap: 1rem;
     }
 }

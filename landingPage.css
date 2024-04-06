@@ -53,6 +53,7 @@
     border-radius: 1.5rem;
     margin-right: 0.5rem;
     padding: 0.35rem;
+    cursor: pointer;
 }
 
 .order-now-btn {
@@ -105,14 +106,12 @@
     background-color: inherit;
     color: var(--tertiary-color);
     transition: background-color 0.5s, color 0.5s;
-    cursor: pointer;
 }
 
 .check-out-btn:hover {
     color: var(--tertiary-color);
     border: solid 1px var(--tertiary-color);
     transition: border 0.5s, color 0.5s;
-    cursor: pointer;
 }
 
 @media (width < 768px) {

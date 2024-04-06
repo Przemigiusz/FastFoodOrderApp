@@ -6,8 +6,8 @@
     --primary-background-color: #FFF2F1;
     --secondary-background-color: #FAFAFA;
     --quaternary-background-color: #e9c46a;
-    --primary-font: "Josefin Sans", sans-serif;
-    --secondary-font: "Yeseva One", serif;
+    --primary-font: "Rufina", serif;
+    --secondary-font: "Oxygen", sans-serif;
 }
 
 body {
@@ -16,6 +16,14 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--secondary-background-color);
+}
+
+.colored {
+    color: var(--tertiary-color);
+}
+
+.new-line {
+    display: block;
 }
 
 .section-header {
@@ -29,4 +37,22 @@ body {
 .section-header-title {
     margin: 0;
     font-size: 3rem;
+}
+
+.section-header-description {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.section-header-description p {
+    margin: 0;
+}
+
+@Media (width < 750px) {
+    .section-header {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
 }
