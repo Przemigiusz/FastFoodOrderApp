@@ -1,0 +1,165 @@
+.navbar {
+    background-color: var(--primary-background-color);
+    font-size: 1.1rem;
+    position: sticky;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: calc(1200px - 3rem);
+}
+
+.navbar-mobile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    position: absolute;
+    width: 100%;
+    left: -150vw;
+    background-color: var(--primary-background-color);
+    transition: left 0.25s linear;
+}
+
+.navbar-mobile-links>li>a:last-child {
+    margin-bottom: 1rem;
+}
+
+.navbar-mobile-links>li>a:first-child {
+    margin-top: 1rem;
+}
+
+.navbar-mobile-links a {
+    color: var(--tertiary-color);
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-part-brand>h1 {
+    color: var(--secondary-color);
+}
+
+.navbar-part-center>a {
+    color: var(--primary-color);
+}
+
+.navbar-part-right>a {
+    color: var(--tertiary-color);
+}
+
+.navbar-part-center,
+.navbar-part-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-up-btn {
+    border: 1px solid var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.navbar-part-center>a.current-tab {
+    color: var(--secondary-color);
+}
+
+.navbar-part-right>a.current-tab,
+.navbar-mobile-links>li>a.current-tab {
+    color: var(--quaternary-color);
+}
+
+.navbar-part-center>a,
+.navbar-part-right>a,
+.navbar-mobile-links>li>a {
+    position: relative;
+}
+
+
+.navbar-part-center>a.half-underline:hover::after,
+.navbar-part-right>a.half-underline:hover::after,
+.navbar-mobile-links>li>a.half-underline:hover::after,
+.navbar-mobile-links>li>a.half-underline:hover::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: grow 0.5s forwards;
+}
+
+@keyframes grow {
+    to {
+        width: 50%;
+    }
+}
+
+.navbar-part-right .sign-up-btn:hover {
+    background-color: var(--tertiary-color);
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.brand-name {
+    cursor: pointer;
+}
+
+.navbar-part-hamburger {
+    display: none;
+}
+
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger-btn span {
+    width: 1.5rem;
+    height: 0.25rem;
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+.show {
+    left: 0;
+}
+
+@media (width < 800px) {
+
+    .navbar-part-hamburger {
+        display: flex;
+    }
+
+    .navbar-part-center,
+    .navbar-part-right {
+        display: none;
+    }
+}

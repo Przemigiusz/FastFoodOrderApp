@@ -1,0 +1,131 @@
+.landing-page {
+    background-color: var(--primary-background-color);
+    padding-bottom: 3rem;
+}
+
+.landing-page-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: calc(1200px - 3rem);
+}
+
+.landing-page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page-image {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-page-title,
+.landing-page-description {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page-title {
+    font-size: 3rem;
+    color: var(--tertiary-color);
+    padding-bottom: 2rem;
+}
+
+.landing-page-title span {
+    display: block;
+}
+
+.landing-page-description {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.landing-page-description:last-of-type {
+    padding-bottom: 2rem;
+}
+
+.btn {
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 0.35rem;
+}
+
+.order-now-btn {
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    color: #FFFFFF;
+}
+
+.check-out-btn {
+    background-color: white;
+    border: 1px solid var(--primary-background-color);
+    color: var(--secondary-color);
+}
+
+.order-now-btn>span,
+.check-out-btn>span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-content {
+    padding-right: 0.5rem;
+}
+
+.svg-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.buy {
+    background-color: var(--quaternary-background-color);
+}
+
+.svg-container svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.landing-page-title .brand-underline {
+    display: inline;
+    text-decoration: solid 8px underline var(--quaternary-background-color);
+}
+
+.order-now-btn:hover {
+    background-color: inherit;
+    color: var(--tertiary-color);
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.check-out-btn:hover {
+    color: var(--tertiary-color);
+    border: solid 1px var(--tertiary-color);
+    transition: border 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+@media (width < 768px) {
+
+    .landing-page-content-container {
+        flex-direction: column;
+    }
+
+    .landing-page-content {
+        padding: 3rem 0;
+    }
+
+    .landing-page-content {
+        padding: 3rem 0;
+    }
+}

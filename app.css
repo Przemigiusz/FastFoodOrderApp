@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #6c757d;
+    --secondary-color: #212529;
+    --tertiary-color: #F63155;
+    --quaternary-color: #F81C44;
+    --primary-background-color: #FFF2F1;
+    --secondary-background-color: #FAFAFA;
+    --quaternary-background-color: #e9c46a;
+    --primary-font: "Josefin Sans", sans-serif;
+    --secondary-font: "Yeseva One", serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-background-color);
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.section-header-title {
+    margin: 0;
+    font-size: 3rem;
+}
