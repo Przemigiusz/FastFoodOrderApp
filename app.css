@@ -5,6 +5,7 @@
     --quaternary-color: #F81C44;
     --primary-background-color: #FFF2F1;
     --secondary-background-color: #FAFAFA;
+    --tertiary-background-color: #ffd500;
     --quaternary-background-color: #e9c46a;
     --primary-font: "Rufina", serif;
     --secondary-font: "Oxygen", sans-serif;
@@ -55,4 +56,15 @@ body {
         align-items: start;
         gap: 1rem;
     }
+}
+
+.brand-underline {
+    text-decoration: solid 8px underline var(--quaternary-background-color);
+}
+
+.centered-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

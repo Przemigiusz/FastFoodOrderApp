@@ -127,4 +127,8 @@
     .landing-page-content {
         padding: 3rem 0;
     }
+
+    .landing-page-image {
+        display: none;
+    }
 }
