@@ -11,6 +11,16 @@
     --secondary-font: "Oxygen", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 body {
     font-family: var(--primary-font);
     margin: 0;
@@ -66,5 +76,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.space-between-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
