@@ -29,24 +29,18 @@ footer {
     gap: 1rem;
 }
 
-.footer-container p {
-    margin-bottom: 0;
-}
-
 .footer-container p,
 .footer-container li {
     color: var(--secondary-color);
 }
 
-.footer-container .information-section a,
-.footer-container .menu-section a {
+.footer-container .subsection a {
     color: var(--primary-color);
     text-decoration: none;
     position: relative;
 }
 
-.footer-container .menu-section a.half-underline:hover::after,
-.footer-container .information-section a.half-underline:hover::after {
+.footer-container .subsection a.half-underline:hover::after {
     content: "";
     height: 2px;
     width: 0;
@@ -62,15 +56,6 @@ footer {
     height: 1.35rem;
     fill: var(--primary-color);
     cursor: pointer;
-}
-
-.media-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
-
 }
 
 @keyframes grow {

@@ -85,6 +85,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-start {
+    justify-content: start;
+}
+
 .align-center {
     align-items: center;
 }
