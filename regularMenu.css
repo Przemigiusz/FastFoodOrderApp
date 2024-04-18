@@ -2,26 +2,11 @@
     margin-bottom: 3rem;
 }
 
-.regular-menu-content-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    max-width: calc(1200px - 3rem);
-    gap: 3rem;
-}
-
 .regular-menu-offer {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     gap: 20px;
     justify-content: space-between;
-}
-
-.header-content-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .see-all-btn {
@@ -30,16 +15,6 @@
     background: var(--tertiary-color);
     border: 1px solid var(--tertiary-color);
     padding: 0.6rem 1.2rem;
-    border-radius: 1.5rem;
-    cursor: pointer;
-}
-
-.buy-now-btn {
-    font-size: 1rem;
-    color: white;
-    background: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
-    padding: 0.5rem 0.8rem;
     border-radius: 1.5rem;
     cursor: pointer;
 }
@@ -72,10 +47,8 @@
     gap: 0.75rem;
 }
 
-.regular-menu-offer-card-title {
+.regular-menu-offer-card-content h4 {
     font-size: 1.4rem;
-    margin: 0;
-    padding: 0;
 }
 
 .offer-info-panel {
@@ -86,8 +59,18 @@
     align-items: center;
 }
 
-.price-info {
+.offer-info-panel span {
     font-size: 1.35rem;
+}
+
+.offer-info-panel button {
+    font-size: 1rem;
+    color: white;
+    background: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
 }
 
 .regular-menu-offer-card-content>span {
