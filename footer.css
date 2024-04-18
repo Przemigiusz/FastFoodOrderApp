@@ -40,7 +40,7 @@ footer {
     position: relative;
 }
 
-.footer-container .subsection a.half-underline:hover::after {
+.footer-container .subsection a:hover::after {
     content: "";
     height: 2px;
     width: 0;
