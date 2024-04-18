@@ -9,23 +9,6 @@
     justify-content: space-between;
 }
 
-.see-all-btn {
-    font-size: 1rem;
-    color: white;
-    background: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
-    padding: 0.6rem 1.2rem;
-    border-radius: 1.5rem;
-    cursor: pointer;
-}
-
-.offer-info-panel button:hover,
-.see-all-btn:hover {
-    background-color: inherit;
-    color: var(--tertiary-color);
-    transition: background-color 0.5s, color 0.5s;
-}
-
 .regular-menu-offer-card {
     display: flex;
     flex-direction: column;
@@ -71,6 +54,12 @@
     padding: 0.5rem 0.8rem;
     border-radius: 1.5rem;
     cursor: pointer;
+}
+
+.offer-info-panel button:hover {
+    background-color: inherit;
+    color: var(--tertiary-color);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .regular-menu-offer-card-content>span {

@@ -97,7 +97,6 @@
 
 .navbar-part-center>a.half-underline:hover::after,
 .navbar-part-right>a.half-underline:hover::after,
-.navbar-mobile-links>li>a.half-underline:hover::after,
 .navbar-mobile-links>li>a.half-underline:hover::after {
     content: "";
     height: 2px;

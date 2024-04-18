@@ -1,3 +1,9 @@
+main {
+    background: linear-gradient(to bottom, var(--primary-background-color) 50%, var(--secondary-background-color) 50%);
+    width: 100vw;
+    height: 100vh;
+}
+
 .login-form {
     display: flex;
     max-width: 500px;
@@ -6,9 +12,46 @@
     align-items: center;
     margin: 0 auto;
     padding: 2rem 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    gap: 1rem;
+    font-size: 1.1rem;
+    background-color: #FFFFFF;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.input-icon {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-left: 30px;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    background-color: inherit;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+
+input[type='checkbox'] {
+    accent-color: var(--tertiary-color);
 }
 
 .form-group {
@@ -16,12 +59,40 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
-.space-between-content-container {
-    gap: 1rem;
+.form-group svg {
+    width: 1rem;
+    height: 1rem;
 }
 
 .login-form a {
+    color: var(--tertiary-color);
     text-decoration: none;
+}
+
+.form-group button {
+    flex-grow: 1;
+}
+
+.login-form a {
+    position: relative;
+}
+
+.login-form a:hover::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    animation: grow 0.5s forwards;
+}
+
+@keyframes grow {
+    to {
+        width: 100%;
+    }
 }

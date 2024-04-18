@@ -34,6 +34,7 @@ html {
 body {
     font-family: var(--primary-font);
     background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
 }
 
 .no-scroll {
@@ -146,4 +147,20 @@ body {
 
 .gap-3rem {
     gap: 3rem;
+}
+
+.custom-btn {
+    font-size: 1rem;
+    color: white;
+    background: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: inherit;
+    color: var(--tertiary-color);
+    transition: background-color 0.5s, color 0.5s;
 }

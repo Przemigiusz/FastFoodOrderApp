@@ -7,35 +7,52 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="./app.css">
     <link rel="stylesheet" href="./loginPage.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Rufina:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
-<main>
-    <section class="login-form">
-        <h1>LOG IN</h1>
-        <form action="/login" method="post">
-            <div class="form-group">
-                <input type="text" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <input type="password" id="password" name="password" placeholder="Password" required>
-            </div>
-            <div class="space-between-content-container">
-                <div>
-                    <input type="checkbox" id="remember-me" name="remember-me" />
-                    <label for="remember-me">Remember Me</label>
-                </div>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login">
-            </div>
-            <div class="centered-content-container">
-                <p>Don't have an account? <a href="/register">Register</a></p>
-        </form>
-    </section>
-</main>
 
 <body>
-
+    <main>
+        <section class="login-form">
+            <h1>Foodle</h1>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="input-icon"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="input-icon"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex-row justify-between gap-1rem">
+                    <div>
+                        <input type="checkbox" id="remember-me" name="remember-me" />
+                        <label for="remember-me">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                    <button class="custom-btn">Login</button>
+                </div>
+                <div class="flex-row justify-center">
+                    <p>Don't have an account? <a href="/register">Sign Up</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
