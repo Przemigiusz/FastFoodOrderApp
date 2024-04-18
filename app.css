@@ -134,3 +134,11 @@ body {
 .padding-bottom-2rem {
     padding-bottom: 2rem;
 }
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+.gap-3rem {
+    gap: 3rem;
+}
