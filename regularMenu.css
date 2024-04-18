@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 
-.buy-now-btn:hover,
+.offer-info-panel button:hover,
 .see-all-btn:hover {
     background-color: inherit;
     color: var(--tertiary-color);

@@ -35,6 +35,16 @@ const navbarMobileLinks = document.getElementsByClassName("navbar-mobile-links")
 
 document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', function () {
     navbarMobileLinks.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
+
+    if (!navbarMobileLinks.classList.contains('show')) {
+        setTimeout(function () {
+            navbarMobileLinks.classList.remove('height-100vh');
+        }, 250);
+    } else {
+        navbarMobileLinks.classList.add('height-100vh');
+    }
+
 });
 
 mobileNavbarTabs.forEach(tab => {
