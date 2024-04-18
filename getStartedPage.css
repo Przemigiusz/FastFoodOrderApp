@@ -1,6 +1,7 @@
 .get-started {
     background-color: var(--primary-background-color);
     padding-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .get-started-container {
