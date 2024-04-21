@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #6c757d;
+    --secondary-color: #212529;
+    --tertiary-color: #F63155;
+    --quaternary-color: #F81C44;
+    --primary-background-color: #FFF2F1;
+    --secondary-background-color: #FAFAFA;
+    --tertiary-background-color: #ffd500;
+    --quaternary-background-color: #e9c46a;
+    --primary-font: "Rufina", serif;
+    --secondary-font: "Oxygen", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.height-100vh {
+    height: 100vh;
+}
+
+.colored {
+    color: var(--tertiary-color);
+}
+
+.new-line {
+    display: block;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.section-header-title {
+    font-size: 3rem;
+}
+
+.section-header-description {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+@Media (width < 750px) {
+    .section-header {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+}
+
+.brand-underline {
+    text-decoration: solid 8px underline var(--quaternary-background-color);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.max-width {
+    max-width: calc(1200px - 3rem);
+}
+
+.margin-bottom-3rem {
+    margin-bottom: 3rem;
+}
+
+.padding-bottom-3rem {
+    padding-bottom: 3rem;
+}
+
+.border-radius-1rem {
+    border-radius: 1rem;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.padding-0-1_5rem {
+    padding: 0 1.5rem;
+}
+
+.padding-2-1_5rem {
+    padding: 2rem 1.5rem;
+}
+
+.padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+.gap-3rem {
+    gap: 3rem;
+}
+
+.custom-btn {
+    font-size: 1rem;
+    color: white;
+    background: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: inherit;
+    color: var(--tertiary-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+@keyframes grow-full {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes grow-half {
+    to {
+        width: 50%;
+    }
+}
