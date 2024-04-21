@@ -5,22 +5,33 @@ import url from 'url';
 
 const server = http.createServer((req, res) => {
     let pathname = url.parse(req.url).pathname;
-    let filePath = path.join(process.cwd(), 'public', pathname === '/' ? 'html/index.html' : pathname);
-    let extname = path.extname(filePath);
+    let filePath;
     let contentType;
-    console.log(filePath);
-    switch (extname) {
-        case '.js':
-            contentType = 'text/javascript';
-            break;
-        case '.css':
-            contentType = 'text/css';
-            break;
-        case '.html':
-            contentType = 'text/html';
-            break;
-        default:
-            contentType = 'text/plain';
+
+    if (pathname.startsWith('/images') || pathname.startsWith('/js') || pathname.startsWith('/html') || pathname.startsWith('/css')) {
+        filePath = path.join(process.cwd(), 'public', pathname);
+        switch (path.extname(filePath)) {
+            case '.js':
+                contentType = 'text/javascript';
+                break;
+            case '.css':
+                contentType = 'text/css';
+                break;
+            case '.html':
+                contentType = 'text/html';
+                break;
+            case '.jpg':
+            case '.jpeg':
+            case '.png':
+            case '.gif':
+                contentType = 'image/' + path.extname(filePath).slice(1);
+                break;
+            default:
+                contentType = 'text/plain';
+        }
+    } else {
+        filePath = path.join(process.cwd(), 'public/html', 'index.html');
+        contentType = 'text/html';
     }
 
     fs.readFile(filePath, (err, content) => {
