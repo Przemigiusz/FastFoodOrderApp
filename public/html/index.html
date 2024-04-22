@@ -21,23 +21,9 @@
 
 <body>
     <main id="main"></main>
-    <script>
-        window.loadScript = function (src) {
-            return new Promise(function (resolve, reject) {
-                var script = document.createElement('script');
-                script.src = src;
-                script.onload = resolve;
-                script.onerror = reject;
-                document.body.appendChild(script);
-            });
-        }
-        Promise.all([
-            loadScript("/js/loadContent.js"),
-        ]).then(function () {
-            loadContent();
-        }).catch((error) => {
-            console.error(error);
-        });
+    <script type="module">
+        import navigationModule from '/js/navigationModule.js';
+        navigationModule.initialize().catch(console.error);
     </script>
 </body>
 
