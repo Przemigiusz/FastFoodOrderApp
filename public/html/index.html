@@ -22,7 +22,7 @@
 <body>
     <main id="main"></main>
     <script>
-        function loadScript(src) {
+        window.loadScript = function (src) {
             return new Promise(function (resolve, reject) {
                 var script = document.createElement('script');
                 script.src = src;
@@ -32,12 +32,11 @@
             });
         }
         Promise.all([
-            loadScript("/js/loadNavbarFooter.js"),
-
+            loadScript("/js/loadContent.js"),
         ]).then(function () {
-            loadScript("/js/navigation.js")
-        }).catch(function () {
-            console.log("Scripts Order Error")
+            loadContent();
+        }).catch((error) => {
+            console.error(error);
         });
     </script>
 </body>
