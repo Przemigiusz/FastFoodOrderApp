@@ -1,15 +1,14 @@
 export default {
     pages: {},
-    currentPage: null,
-    previousPage: null,
 
-    loadPage: function (href) {
+    loadPage: function (href, pushToHistory = true) {
         const main = document.getElementById('main');
         if (this.pages[href]) {
             main.innerHTML = this.pages[href];
-            this.previousPage = this.currentPage;
-            this.currentPage = href;
-            history.pushState(null, '', href);
+            if (pushToHistory) {
+                console.log(`Pushed ${href} to history`);
+                history.pushState({}, '', href);
+            }
         }
     },
 
@@ -47,18 +46,29 @@ export default {
         return Promise.all([
             this.fetchPage('/html/navbar.html', '/navbar'),
             this.fetchPage('/html/footer.html', '/footer'),
-            this.fetchPage('/html/landingPage.html', '/home'),
+            this.fetchPage('/html/landingPage.html', '/'),
             this.fetchPage('/html/loginPage.html', '/login'),
             this.fetchPage('/html/registrationPage.html', '/signup')
         ]).then(() => {
             this.loadNavbarAndFootbar();
-            this.loadPage('/home');
+            const currentUrl = window.location.pathname;
+            if (currentUrl === '/') {
+                this.loadPage(currentUrl, false);
+            } else {
+                this.loadPage(currentUrl);
+            }
+
+
             document.body.addEventListener('click', event => {
                 if (event.target.tagName === 'A') {
                     event.preventDefault();
                     const href = event.target.getAttribute('href');
                     this.loadPage(href);
                 }
+            });
+            window.addEventListener('popstate', () => {
+                const currentUrl = window.location.pathname;
+                this.loadPage(currentUrl, false);
             });
         });
     }
