@@ -45,7 +45,7 @@
 
 .best-categories-offer-card button {
     font-size: 1rem;
-    color: var(--tertiary-color);
+    color: var(--c-color);
     background: inherit;
     border: none;
     padding: 0;
@@ -57,10 +57,10 @@
     content: "";
     height: 2px;
     width: 0;
-    background-color: var(--tertiary-color);
+    background-color: var(--c-color);
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -2.5px;
     animation: grow-full 0.5s forwards;
 }
 

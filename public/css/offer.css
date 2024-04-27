@@ -38,7 +38,7 @@
 }
 
 .offer-item>p:first-of-type {
-    color: var(--primary-color);
+    color: var(--b-color);
 }
 
 .price {
@@ -56,7 +56,7 @@
 .add-to-cart svg {
     width: 1.5rem;
     height: 1.5rem;
-    fill: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    fill: var(--a-color);
+    border: 1px solid var(--a-color);
     border-radius: 50%;
 }

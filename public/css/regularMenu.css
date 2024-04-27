@@ -48,8 +48,8 @@
 .offer-info-panel button {
     font-size: 1rem;
     color: white;
-    background: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
+    background: var(--c-color);
+    border: 1px solid var(--c-color);
     padding: 0.5rem 0.8rem;
     border-radius: 1.5rem;
     cursor: pointer;
@@ -57,7 +57,7 @@
 
 .offer-info-panel button:hover {
     background-color: inherit;
-    color: var(--tertiary-color);
+    color: var(--c-color);
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .regular-menu-offer-card-content>span>span {
-    color: var(--primary-color);
+    color: var(--b-color);
     font-size: 1rem;
 }
 

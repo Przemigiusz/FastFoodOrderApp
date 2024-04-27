@@ -1,5 +1,5 @@
 .get-started {
-    background-color: var(--primary-background-color);
+    background-color: var(--b-bg-color);
     padding-bottom: 3rem;
     padding-top: 2rem;
 }
@@ -10,7 +10,7 @@
 }
 
 .get-started h2 {
-    color: var(--tertiary-color);
+    color: var(--c-color);
 }
 
 .get-started h2>span {
@@ -19,7 +19,7 @@
 
 .get-started p {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--b-color);
 }
 
 .menu-btn {
@@ -28,8 +28,8 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--tertiary-color);
-    color: #FFFFFF;
+    background-color: var(--c-color);
+    color: var(--e-color);
     font-weight: 700;
 }
 
@@ -52,26 +52,26 @@
 }
 
 .order-now-btn {
-    background-color: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
-    color: #FFFFFF;
+    background-color: var(--c-color);
+    border: 1px solid var(--c-color);
+    color: var(--e-color);
 }
 
 .check-out-btn {
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    color: var(--secondary-color);
+    background-color: var(--e-color);
+    border: 1px solid var(--e-color);
+    color: var(--a-color);
 }
 
 .order-now-btn:hover {
     background-color: inherit;
-    color: var(--tertiary-color);
+    color: var(--c-color);
     transition: background-color 0.5s, color 0.5s;
 }
 
 .check-out-btn:hover {
-    color: var(--tertiary-color);
-    border: solid 1px var(--tertiary-color);
+    color: var(--c-color);
+    border: solid 1px var(--c-color);
     transition: border 0.5s, color 0.5s;
 }
 
@@ -84,16 +84,12 @@
 }
 
 .buy {
-    background-color: var(--quaternary-background-color);
+    background-color: var(--g-color);
 }
 
 .svg-container svg {
     width: 1rem;
     height: 1rem;
-}
-
-.brand-underline {
-    text-decoration: solid 8px underline var(--quaternary-background-color);
 }
 
 @media (width < 768px) {

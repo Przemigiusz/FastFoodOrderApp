@@ -1,6 +1,6 @@
 .characteristic {
     margin-bottom: 3rem;
-    background: linear-gradient(to bottom, var(--primary-background-color) 50%, var(--secondary-background-color) 50%);
+    background: linear-gradient(to bottom, var(--b-bg-color) 50%, var(--a-bg-color) 50%);
 }
 
 .characteristic-cards {
@@ -27,7 +27,7 @@
 }
 
 .card-icon {
-    background-color: var(--quaternary-background-color);
+    background-color: var(--g-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@
 }
 
 .card-content p {
-    color: var(--primary-color);
+    color: var(--b-color);
     font-size: 0.85rem;
 }
 

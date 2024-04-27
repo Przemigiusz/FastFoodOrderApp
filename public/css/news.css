@@ -45,24 +45,24 @@
     padding: 0.8rem;
     border-radius: 50%;
     border: none;
-    background-color: var(--tertiary-background-color);
+    background-color: var(--f-color);
     cursor: pointer;
 }
 
 .news-panel button svg {
     width: 1rem;
     height: 1rem;
-    fill: var(--secondary-color);
+    fill: var(--a-color);
     stroke-width: 2;
 }
 
 .see-all-news-btn {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--secondary-color);
-    background: var(--tertiary-background-color);
+    color: var(--a-color);
+    background: var(--f-color);
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, var(--tertiary-background-color) 50%, var(--quaternary-background-color) 50%);
+    background-image: linear-gradient(to right, var(--f-color) 50%, var(--g-color) 50%);
     transition: all 0.5s ease;
     border: none;
     padding: 0.6rem 1.5rem;

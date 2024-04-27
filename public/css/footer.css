@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--primary-background-color);
+    background-color: var(--b-bg-color);
     padding-bottom: 3rem;
 }
 
@@ -16,7 +16,7 @@ footer {
 
 .footer-container h4 {
     font-size: 1.6rem;
-    color: var(--tertiary-color);
+    color: var(--c-color);
     margin-bottom: 1rem;
 }
 
@@ -31,11 +31,11 @@ footer {
 
 .footer-container p,
 .footer-container li {
-    color: var(--secondary-color);
+    color: var(--a-color);
 }
 
 .footer-container .subsection a {
-    color: var(--primary-color);
+    color: var(--b-color);
     text-decoration: none;
     position: relative;
 }
@@ -44,17 +44,17 @@ footer {
     content: "";
     height: 2px;
     width: 0;
-    background-color: var(--tertiary-color);
+    background-color: var(--c-color);
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2.5px;
     animation: grow-half 0.5s forwards;
 }
 
 .follow-section svg {
     width: 1.35rem;
     height: 1.35rem;
-    fill: var(--primary-color);
+    fill: var(--b-color);
     cursor: pointer;
 }
 

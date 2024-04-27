@@ -1,5 +1,5 @@
 .navbar {
-    background-color: var(--primary-background-color);
+    background-color: var(--b-bg-color);
     font-size: 1.1rem;
     position: sticky;
     top: 0;
@@ -32,7 +32,7 @@
     position: absolute;
     width: 100%;
     left: -150vw;
-    background-color: var(--primary-background-color);
+    background-color: var(--b-bg-color);
     transition: left 0.25s linear;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .navbar-mobile-links a {
-    color: var(--tertiary-color);
+    color: var(--c-color);
 }
 
 .navbar a {
@@ -54,15 +54,15 @@
 }
 
 .navbar-part-brand>h1 {
-    color: var(--secondary-color);
+    color: var(--a-color);
 }
 
 .navbar-part-center>a {
-    color: var(--primary-color);
+    color: var(--b-color);
 }
 
 .navbar-part-right>a {
-    color: var(--tertiary-color);
+    color: var(--c-color);
 }
 
 .navbar-part-center,
@@ -74,18 +74,18 @@
 }
 
 .sign-up-btn {
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--c-color);
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
 .navbar-part-center>a.current-tab {
-    color: var(--secondary-color);
+    color: var(--a-color);
 }
 
 .navbar-part-right>a.current-tab,
 .navbar-mobile-links>li>a.current-tab {
-    color: var(--quaternary-color);
+    color: var(--d-color);
 }
 
 .navbar-part-center>a,
@@ -101,7 +101,7 @@
     content: "";
     height: 2px;
     width: 0;
-    background-color: var(--tertiary-color);
+    background-color: var(--c-color);
     position: absolute;
     left: 0;
     bottom: -2.5px;
@@ -109,7 +109,7 @@
 }
 
 .navbar-part-right .sign-up-btn:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--c-color);
     color: white;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -138,7 +138,7 @@
 .hamburger-btn span {
     width: 1.5rem;
     height: 0.25rem;
-    background: var(--tertiary-color);
+    background: var(--c-color);
     border-radius: 10px;
 }
 
