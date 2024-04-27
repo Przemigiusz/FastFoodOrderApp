@@ -22,10 +22,21 @@
     color: var(--primary-color);
 }
 
+.menu-btn {
+    width: auto;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--tertiary-color);
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+
 .btn {
     font-size: 1rem;
     border-radius: 1.5rem;
-    margin-right: 0.5rem;
     padding: 0.5rem;
     cursor: pointer;
     text-decoration: none;
@@ -34,6 +45,10 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+.btn:first-child {
+    margin-right: 0.5rem;
 }
 
 .order-now-btn {

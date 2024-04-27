@@ -49,7 +49,7 @@ export default {
             this.fetchPage('/html/landingPage.html', '/'),
             this.fetchPage('/html/loginPage.html', '/login'),
             this.fetchPage('/html/registrationPage.html', '/signup'),
-            this.fetchPage('/html/offer.html', '/offer')
+            this.fetchPage('/html/offer.html', '/menu')
         ]).then(() => {
             this.loadNavbarAndFootbar();
             const currentUrl = window.location.pathname;
