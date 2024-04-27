@@ -61,7 +61,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .section-header-title {
@@ -152,9 +152,9 @@ body {
     gap: 3rem;
 }
 
-.custom-btn {
+.section-btn {
     font-size: 1rem;
-    color: white;
+    color: var(--e-color);
     background: var(--c-color);
     border: 1px solid var(--c-color);
     padding: 0.6rem 1.2rem;
@@ -162,9 +162,24 @@ body {
     cursor: pointer;
 }
 
-.custom-btn:hover {
+.section-btn:hover {
     background-color: inherit;
     color: var(--c-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.offer-btn {
+    font-size: 1rem;
+    color: var(--c-color);
+    border: 1px solid var(--c-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.offer-btn:hover {
+    background: var(--c-color);
+    color: var(--e-color);
     transition: background-color 0.5s, color 0.5s;
 }
 
