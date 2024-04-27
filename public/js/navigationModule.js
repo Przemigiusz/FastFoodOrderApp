@@ -48,7 +48,8 @@ export default {
             this.fetchPage('/html/footer.html', '/footer'),
             this.fetchPage('/html/landingPage.html', '/'),
             this.fetchPage('/html/loginPage.html', '/login'),
-            this.fetchPage('/html/registrationPage.html', '/signup')
+            this.fetchPage('/html/registrationPage.html', '/signup'),
+            this.fetchPage('/html/offer.html', '/offer')
         ]).then(() => {
             this.loadNavbarAndFootbar();
             const currentUrl = window.location.pathname;
@@ -60,10 +61,15 @@ export default {
 
 
             document.body.addEventListener('click', event => {
-                if (event.target.tagName === 'A') {
-                    event.preventDefault();
-                    const href = event.target.getAttribute('href');
-                    this.loadPage(href);
+                let target = event.target;
+                while (target != null) {
+                    if (target.tagName === 'A') {
+                        event.preventDefault();
+                        const href = target.getAttribute('href');
+                        this.loadPage(href);
+                        break;
+                    }
+                    target = target.parentElement;
                 }
             });
             window.addEventListener('popstate', () => {

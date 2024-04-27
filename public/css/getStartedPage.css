@@ -26,8 +26,14 @@
     font-size: 1rem;
     border-radius: 1.5rem;
     margin-right: 0.5rem;
-    padding: 0.35rem;
+    padding: 0.5rem;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .order-now-btn {
@@ -42,16 +48,16 @@
     color: var(--secondary-color);
 }
 
-.order-now-btn>span,
-.check-out-btn>span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+.order-now-btn:hover {
+    background-color: inherit;
+    color: var(--tertiary-color);
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.btn-content {
-    padding-right: 0.5rem;
+.check-out-btn:hover {
+    color: var(--tertiary-color);
+    border: solid 1px var(--tertiary-color);
+    transition: border 0.5s, color 0.5s;
 }
 
 .svg-container {
@@ -73,18 +79,6 @@
 
 .brand-underline {
     text-decoration: solid 8px underline var(--quaternary-background-color);
-}
-
-.order-now-btn:hover {
-    background-color: inherit;
-    color: var(--tertiary-color);
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.check-out-btn:hover {
-    color: var(--tertiary-color);
-    border: solid 1px var(--tertiary-color);
-    transition: border 0.5s, color 0.5s;
 }
 
 @media (width < 768px) {
