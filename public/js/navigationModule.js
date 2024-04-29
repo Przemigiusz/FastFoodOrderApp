@@ -10,6 +10,11 @@ export default {
                 history.pushState({}, '', href);
             }
         }
+
+        this.removeScript('/js/tabManager.js');
+        if (href === '/') {
+            this.addScript('/js/tabManager.js');
+        }
     },
 
     loadNavbarAndFootbar: function () {
