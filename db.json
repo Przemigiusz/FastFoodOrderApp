@@ -1,0 +1,86 @@
+{
+    "burgers": [
+        {
+            "id": 1,
+            "name": "Classic Burger",
+            "description": "Juicy beef patty (150g), fresh lettuce, ripe tomato, special sauce.",
+            "price": 5.99,
+            "image": "/images/vecteezy_beef-burger-isolated-illustration_23901899-removebg-preview.png",
+            "purchased_quantity": 100
+        },
+        {
+            "id": 2,
+            "name": "Cheese Burger",
+            "description": "Beef patty (150g), melted cheddar cheese, crisp lettuce, ripe tomato.",
+            "price": 6.99,
+            "image": "/images/vecteezy_burger-hamburger-cheeseburger-ai-generated_32514690-removebg-preview.png",
+            "purchased_quantity": 99
+        },
+        {
+            "id": 3,
+            "name": "Veggie Burger",
+            "description": "Veggie patty (200g) made with fresh vegetables, lettuce, ripe tomato.",
+            "price": 7.99,
+            "image": "/images/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese-removebg-preview.png",
+            "purchased_quantity": 98
+        },
+        {
+            "id": 4,
+            "name": "Chicken Burger",
+            "description": "Grilled chicken breast (200g), lettuce, mayonnaise.",
+            "price": 8.99,
+            "image": "/images/vecteezy_ai-generated-food-for-fast-food-in-form-of-delicious-hot_37264815-removebg-preview.png",
+            "purchased_quantity": 97
+        },
+        {
+            "id": 5,
+            "name": "Greek Burger",
+            "description": "Beef patty (150g), olives, feta cheese, red onions, tomatoes.",
+            "price": 6.99,
+            "image": "/images/vecteezy_burger-hamburger-cheeseburger-ai-generated_32514695-removebg-preview.png",
+            "purchased_quantity": 96
+        }
+    ],
+    "pizzas": [
+        {
+            "id": 1,
+            "name": "Margherita",
+            "description": "Tomato sauce, mozzarella cheese (200g), fresh basil.",
+            "price": 7.99,
+            "image": "/images/vecteezy_hot-pizza-isolated-illustration_22520576-removebg-preview.png",
+            "purchased_quantity": 100
+        },
+        {
+            "id": 2,
+            "name": "Pepperoni",
+            "description": "Tomato sauce, mozzarella cheese (200g), pepperoni slices.",
+            "price": 8.99,
+            "image": "/images/vecteezy_caliente-pizza-aislado-ilustracion-ai-generativo_22527905-removebg-preview.png",
+            "purchased_quantity": 99
+        },
+        {
+            "id": 3,
+            "name": "Vegetarian",
+            "description": "Tomato sauce, mozzarella cheese (200g), assorted fresh vegetables.",
+            "price": 9.99,
+            "image": "/images/vecteezy_hot-pizza-isolated-illustration_22527681-removebg-preview.png",
+            "purchased_quantity": 98
+        },
+        {
+            "id": 4,
+            "name": "Four Cheese",
+            "description": "Mozzarella, cheddar, gorgonzola, parmesan cheeses (combined 200g).",
+            "price": 10.99,
+            "image": "/images/vecteezy_hot-pizza-isolated-illustration_22527790-removebg-preview.png",
+            "purchased_quantity": 97
+        },
+        {
+            "id": 5,
+            "name": "Mediterrean",
+            "description": "Olives, juicy tomatoes, aromatic herbs, olive oil.",
+            "price": 8.99,
+            "image": "/images/vecteezy_hot-pizza-isolated-illustration_22527585-removebg-preview.png",
+            "purchased_quantity": 96
+        }
+    ]
+}

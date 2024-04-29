@@ -10,6 +10,7 @@
   "author": "Przemysław Rutkowski",
   "license": "ISC",
   "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
     "nodemon": "^3.1.0"
   }
 }

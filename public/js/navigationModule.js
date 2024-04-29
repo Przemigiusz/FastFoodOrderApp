@@ -13,8 +13,12 @@ export default {
         }
 
         this.removeScript('/js/tabManager.js');
+        this.removeScript('/js/offer.js');
         if (href === '/') {
             this.addScript('/js/tabManager.js');
+            this.addScript('/js/mostPopularProducts.js');
+        } if (href === '/menu') {
+            this.addScript('/js/offer.js');
         }
     },
 
