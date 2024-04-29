@@ -4,6 +4,7 @@ export default {
     loadPage: function (href, pushToHistory = true) {
         const main = document.getElementById('main');
         if (this.pages[href]) {
+            window.scrollTo(0, 0);
             main.innerHTML = this.pages[href];
             if (pushToHistory) {
                 console.log(`Pushed ${href} to history`);
