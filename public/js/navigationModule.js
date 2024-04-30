@@ -1,3 +1,7 @@
+import './mostPopularProducts.js';
+import './offer.js';
+import './tabManager.js';
+
 export default {
     pages: {},
 
@@ -14,6 +18,7 @@ export default {
 
         this.removeScript('/js/tabManager.js');
         this.removeScript('/js/offer.js');
+        this.removeScript('/js/mostPopularProducts.js');
         if (href === '/') {
             this.addScript('/js/tabManager.js');
             this.addScript('/js/mostPopularProducts.js');
@@ -31,9 +36,11 @@ export default {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
             script.src = src;
+            script.type = 'module';
             script.onload = resolve;
             script.onerror = reject;
             document.body.appendChild(script);
+            console.log(`Added script ${src}`);
         });
     },
 

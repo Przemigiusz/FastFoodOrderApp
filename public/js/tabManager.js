@@ -1,10 +1,4 @@
-var fakeEvent = {
-    currentTarget: document.querySelector('.menu-tab')
-};
-
-openTab(fakeEvent, 'burgers');
-
-function openTab(evt, tabName) {
+export default function openTab(evt, tabName) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("menu-tab-content");
     for (i = 0; i < tabcontent.length; i++) {
