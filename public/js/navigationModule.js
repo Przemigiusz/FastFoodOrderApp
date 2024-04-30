@@ -1,6 +1,9 @@
 import './mostPopularProducts.js';
+import setTopThreeProducts from './mostPopularProducts.js';
 import './offer.js';
+import setOffer from './offer.js';
 import './tabManager.js';
+import { openTab, initializeTabs } from './tabManager.js';
 
 export default {
     pages: {},
@@ -16,39 +19,21 @@ export default {
             }
         }
 
-        this.removeScript('/js/tabManager.js');
-        this.removeScript('/js/offer.js');
-        this.removeScript('/js/mostPopularProducts.js');
         if (href === '/') {
-            this.addScript('/js/tabManager.js');
-            this.addScript('/js/mostPopularProducts.js');
+            let fakeEvent = {
+                currentTarget: document.querySelector('.menu-tab')
+            };
+            initializeTabs();
+            openTab(fakeEvent, 'burgers');
+            setTopThreeProducts();
         } if (href === '/menu') {
-            this.addScript('/js/offer.js');
+            setOffer();
         }
     },
 
     loadNavbarAndFootbar: function () {
         document.body.insertAdjacentHTML('afterbegin', this.pages['/navbar']);
         document.body.insertAdjacentHTML('beforeend', this.pages['/footer']);
-    },
-
-    addScript: function (src) {
-        return new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            script.src = src;
-            script.type = 'module';
-            script.onload = resolve;
-            script.onerror = reject;
-            document.body.appendChild(script);
-            console.log(`Added script ${src}`);
-        });
-    },
-
-    removeScript: function (src) {
-        const script = document.querySelector(`script[src="${src}"]`);
-        if (script) {
-            script.parentNode.removeChild(script);
-        }
     },
 
     fetchPage: function (url, pageName) {
@@ -75,7 +60,6 @@ export default {
             } else {
                 this.loadPage(currentUrl);
             }
-
 
             document.body.addEventListener('click', event => {
                 let target = event.target;
