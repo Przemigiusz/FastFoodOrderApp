@@ -2,6 +2,7 @@ import setTopThreeProducts from './mostPopularProducts.js';
 import setOffer from './offer.js';
 import initializeTabs from './tabManager.js';
 import { openTab } from './tabManager.js';
+import initilizeNavbar from './navbar.js';
 
 export default {
     pages: {},
@@ -13,6 +14,7 @@ export default {
             main.innerHTML = this.pages[href];
             if (pushToHistory) {
                 history.pushState({}, '', href);
+                this.updateCurrentTab();
             }
         }
 
@@ -51,6 +53,7 @@ export default {
             this.fetchPage('/html/offer.html', '/menu')
         ]).then(() => {
             this.loadNavbarAndFootbar();
+            this.updateCurrentTab = initilizeNavbar();
             const currentUrl = window.location.pathname;
             if (currentUrl === '/') {
                 this.loadPage(currentUrl, false);
