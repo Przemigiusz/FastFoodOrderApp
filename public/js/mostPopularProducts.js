@@ -61,8 +61,10 @@ export default function setTopThreeProducts() {
         });
 
         top3Pizzas.forEach(pizza => {
-
             createOfferItem(pizza, 'pizza', burgersItems, pizzasItems);
         });
     }).catch(error => console.error('Error:', error));
 }
+
+
+

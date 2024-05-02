@@ -1,9 +1,7 @@
-import './mostPopularProducts.js';
 import setTopThreeProducts from './mostPopularProducts.js';
-import './offer.js';
 import setOffer from './offer.js';
-import './tabManager.js';
-import { openTab, initializeTabs } from './tabManager.js';
+import initializeTabs from './tabManager.js';
+import { openTab } from './tabManager.js';
 
 export default {
     pages: {},
@@ -14,7 +12,6 @@ export default {
             window.scrollTo(0, 0);
             main.innerHTML = this.pages[href];
             if (pushToHistory) {
-                console.log(`Pushed ${href} to history`);
                 history.pushState({}, '', href);
             }
         }

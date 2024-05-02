@@ -121,26 +121,6 @@
     display: none;
 }
 
-.hamburger-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.hamburger-btn span {
-    width: 1.5rem;
-    height: 0.25rem;
-    background: var(--c-color);
-    border-radius: 10px;
-}
-
 .show {
     left: 0;
 }
