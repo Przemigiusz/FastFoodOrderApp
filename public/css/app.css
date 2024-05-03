@@ -4,8 +4,7 @@
     --c-color: #F63155;
     --d-color: #F81C44;
     --e-color: #FFFFFF;
-    --f-color: #ffd500;
-    --g-color: #e9c46a;
+    --f-color: #e9c46a;
 
     --a-bg-color: #FAFAFA;
     --b-bg-color: #FFF2F1;
@@ -83,7 +82,7 @@ body {
 }
 
 .brand-underline {
-    text-decoration: solid 8px underline var(--g-color);
+    text-decoration: solid 8px underline var(--f-color);
 }
 
 .flex-row {

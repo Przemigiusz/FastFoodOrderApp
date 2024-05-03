@@ -40,26 +40,26 @@
     padding: 0.8rem;
     border-radius: 50%;
     border: none;
-    background-color: var(--f-color);
+    background-color: var(--c-color);
     cursor: pointer;
 }
 
 .news-panel button svg {
     width: 1rem;
     height: 1rem;
-    fill: var(--a-color);
+    fill: var(--e-color);
     stroke-width: 2;
 }
 
 .see-all-news-btn {
     font-size: 1rem;
-    font-weight: bold;
-    color: var(--a-color);
-    background: var(--f-color);
+    font-weight: 600;
+    color: var(--c-color);
+    background: var(--e-color);
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, var(--f-color) 50%, var(--g-color) 50%);
+    background-image: linear-gradient(to right, var(--e-color) 50%, var(--c-color) 50%);
     transition: all 0.5s ease;
-    border: none;
+    border: 1px solid var(--c-color);
     padding: 0.6rem 1.5rem;
     border-radius: 1.5rem;
     cursor: pointer;
@@ -67,6 +67,7 @@
 
 .see-all-news-btn:hover {
     background-position: -100% 0;
+    color: var(--e-color);
 }
 
 @Media (width < 700px) {
