@@ -2,14 +2,14 @@ import cache from '../js/cache.js';
 import { addProduct } from './cart.js';
 
 function createOfferItem(product, productType, burgersItems, pizzasItems) {
-    let offerItem = document.createElement('div');
-    let img = document.createElement('img');
-    let title = document.createElement('h3');
-    let description = document.createElement('p');
-    let addToCart = document.createElement('div');
-    let price = document.createElement('p');
-    let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const offerItem = document.createElement('div');
+    const img = document.createElement('img');
+    const title = document.createElement('h3');
+    const description = document.createElement('p');
+    const addToCart = document.createElement('div');
+    const price = document.createElement('p');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
     offerItem.className = 'menu-tab-item';
     img.src = product.image;
@@ -43,17 +43,17 @@ function createOfferItem(product, productType, burgersItems, pizzasItems) {
 
 export default function setTopThreeProducts() {
     cache.fetchOffer().then(offer => {
-        let burgers = offer.burgers;
-        let pizzas = offer.pizzas;
+        const burgers = offer.burgers;
+        const pizzas = offer.pizzas;
 
-        let top3Burgers = burgers.sort((a, b) => b.purchased_quantity - a.purchased_quantity).slice(0, 3);
-        let top3Pizzas = pizzas.sort((a, b) => b.purchased_quantity - a.purchased_quantity).slice(0, 3);
+        const top3Burgers = burgers.sort((a, b) => b.purchased_quantity - a.purchased_quantity).slice(0, 3);
+        const top3Pizzas = pizzas.sort((a, b) => b.purchased_quantity - a.purchased_quantity).slice(0, 3);
 
-        let mostPopularBurgers = document.getElementById('burgers');
-        let mostPopularPizzas = document.getElementById('pizzas');
+        const mostPopularBurgers = document.getElementById('burgers');
+        const mostPopularPizzas = document.getElementById('pizzas');
 
-        let burgersItems = document.createElement('div');
-        let pizzasItems = document.createElement('div');
+        const burgersItems = document.createElement('div');
+        const pizzasItems = document.createElement('div');
 
         burgersItems.className = 'menu-tab-items';
         pizzasItems.className = 'menu-tab-items';

@@ -1,0 +1,120 @@
+.cart {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-list-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--a-color);
+    background-color: var(--a-bg-color);
+}
+
+.cart-list-item:first-child {
+    margin-top: 0;
+}
+
+.delete-product-btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+}
+
+.delete-product-btn svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.cart-list-item img {
+    width: 125px;
+    height: 125px;
+    border: 1px solid var(--a-color);
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.cart-item-quantity-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.25rem;
+    border: 1px solid var(--a-color);
+    background-color: var(--e-color);
+}
+
+.cart-item-quantity-container button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item-quantity-container svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.cart-item-info h3,
+.cart-summary h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cart-item-price-val,
+.cart-item-total-val {
+    font-weight: bold;
+}
+
+.cart-summary {
+    display: grid;
+    grid-template-columns: 275px;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px solid var(--a-color);
+    font-size: 1rem;
+}
+
+.cart-summary-costs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-summary-costs span:first-child {
+    color: var(--b-color);
+}
+
+.cart-summary-costs span:last-child {
+    font-weight: bold;
+}
+
+@Media(width < 800px) {
+    .cart {
+        flex-direction: column;
+        align-items: center;
+    }
+}

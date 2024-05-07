@@ -3,7 +3,7 @@ import setOffer from './offer.js';
 import initializeTabs from './tabManager.js';
 import { openTab } from './tabManager.js';
 import initilizeNavbar from './navbar.js';
-import { initializeCart } from './cart.js';
+import { initializeCart, setCartItems } from './cart.js';
 
 export default {
     pages: {},
@@ -26,8 +26,10 @@ export default {
             initializeTabs();
             openTab(fakeEvent, 'burgers');
             setTopThreeProducts();
-        } if (href === '/menu') {
+        } else if (href === '/menu') {
             setOffer();
+        } else if (href === '/cart') {
+            setCartItems();
         }
     },
 
@@ -51,7 +53,8 @@ export default {
             this.fetchPage('/html/landingPage.html', '/'),
             this.fetchPage('/html/loginPage.html', '/login'),
             this.fetchPage('/html/registrationPage.html', '/signup'),
-            this.fetchPage('/html/offer.html', '/menu')
+            this.fetchPage('/html/offer.html', '/menu'),
+            this.fetchPage('/html/cart.html', '/cart')
         ]).then(() => {
             this.loadNavbarAndFootbar();
             this.updateCurrentTab = initilizeNavbar();

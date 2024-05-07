@@ -2,14 +2,14 @@ import cache from '../js/cache.js';
 import { addProduct } from './cart.js';
 
 function createOfferItem(product, productType, offerItemsBurgers, offerItemsPizzas) {
-    let offerItem = document.createElement('div');
-    let img = document.createElement('img');
-    let title = document.createElement('h3');
-    let description = document.createElement('p');
-    let addToCart = document.createElement('div');
-    let price = document.createElement('p');
-    let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const offerItem = document.createElement('div');
+    const img = document.createElement('img');
+    const title = document.createElement('h3');
+    const description = document.createElement('p');
+    const addToCart = document.createElement('div');
+    const price = document.createElement('p');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
     offerItem.className = 'offer-item';
     img.src = product.image;
@@ -43,25 +43,25 @@ function createOfferItem(product, productType, offerItemsBurgers, offerItemsPizz
 
 export default function setOffer() {
     cache.fetchOffer().then(offer => {
-        let burgers = offer.burgers;
-        let pizzas = offer.pizzas;
+        const burgers = offer.burgers;
+        const pizzas = offer.pizzas;
 
-        let offerDiv = document.getElementsByClassName('offer')[0];
+        const offerDiv = document.getElementsByClassName('offer')[0];
 
-        let categoryBurgers = document.createElement('div');
-        let categoryPizzas = document.createElement('div');
+        const categoryBurgers = document.createElement('div');
+        const categoryPizzas = document.createElement('div');
 
         categoryBurgers.className = 'category';
         categoryPizzas.className = 'category';
 
-        let titleBurgers = document.createElement('h2');
-        let titlePizzas = document.createElement('h2');
+        const titleBurgers = document.createElement('h2');
+        const titlePizzas = document.createElement('h2');
 
         titleBurgers.textContent = 'Burgers';
         titlePizzas.textContent = 'Pizzas';
 
-        let offerItemsBurgers = document.createElement('div');
-        let offerItemsPizzas = document.createElement('div');
+        const offerItemsBurgers = document.createElement('div');
+        const offerItemsPizzas = document.createElement('div');
 
         offerItemsBurgers.className = 'offer-items';
         offerItemsPizzas.className = 'offer-items';
