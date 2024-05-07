@@ -144,3 +144,29 @@
         display: none;
     }
 }
+
+.cart {
+    position: relative;
+}
+
+.items-in-cart {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--c-color);
+    top: -0.5rem;
+    right: -0.5rem;
+    color: var(--e-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.navbar-part-right svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: var(--c-color)
+}

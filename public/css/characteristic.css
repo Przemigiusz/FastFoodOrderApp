@@ -4,7 +4,7 @@
 }
 
 .characteristic-cards {
-    background-color: white;
+    background-color: var(--e-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

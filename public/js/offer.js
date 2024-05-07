@@ -1,4 +1,5 @@
 import cache from '../js/cache.js';
+import { addProduct } from './cart.js';
 
 function createOfferItem(product, productType, offerItemsBurgers, offerItemsPizzas) {
     let offerItem = document.createElement('div');
@@ -28,6 +29,10 @@ function createOfferItem(product, productType, offerItemsBurgers, offerItemsPizz
     svg.appendChild(path);
     addToCart.appendChild(svg);
     offerItem.appendChild(addToCart);
+
+    svg.addEventListener('click', () => {
+        addProduct(product.id, productType);
+    });
 
     if (productType === 'burger') {
         offerItemsBurgers.appendChild(offerItem);

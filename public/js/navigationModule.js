@@ -3,6 +3,7 @@ import setOffer from './offer.js';
 import initializeTabs from './tabManager.js';
 import { openTab } from './tabManager.js';
 import initilizeNavbar from './navbar.js';
+import { initializeCart } from './cart.js';
 
 export default {
     pages: {},
@@ -54,6 +55,7 @@ export default {
         ]).then(() => {
             this.loadNavbarAndFootbar();
             this.updateCurrentTab = initilizeNavbar();
+            initializeCart();
             const currentUrl = window.location.pathname;
             if (currentUrl === '/') {
                 this.loadPage(currentUrl, false);
