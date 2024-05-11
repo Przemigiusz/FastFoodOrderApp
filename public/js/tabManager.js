@@ -5,23 +5,24 @@ export function openTab(evt, tabName) {
         tabcontent[i].style.display = "none";
     }
 
-    let menuTabs = document.getElementsByClassName("menu-tab");
-    let mobileMenuTabs = document.getElementsByClassName("mobile-menu-tab");
+    let menuTabs = Array.from(document.getElementsByClassName("menu-tab"));
+    let mobileMenuTabs = Array.from(document.getElementsByClassName("mobile-menu-tab"));
 
     let tabs = [...menuTabs, ...mobileMenuTabs];
 
-    for (let i = 0; i < tabs.length; i++) {
-        tabs[i].classList.remove("active");
-    }
+    tabs.forEach(tab => {
+        tab.classList.remove("active");
+    });
 
     document.getElementById(tabName).style.display = "block";
 
     let clickedTabText = evt.currentTarget.innerText;
-    for (let i = 0; i < tabs.length; i++) {
-        if (tabs[i].innerText === clickedTabText) {
-            tabs[i].classList.add("active");
+
+    tabs.forEach(tab => {
+        if (tab.innerText === clickedTabText) {
+            tab.classList.add("active");
         }
-    }
+    });
 }
 
 function addTabListener(tabs, mobileMenuTabsContainer) {
@@ -46,7 +47,7 @@ function addTabListener(tabs, mobileMenuTabsContainer) {
     });
 }
 
-export default function initializeTabs() {
+export function initializeTabs() {
     let menuTabs = Array.from(document.getElementsByClassName("menu-tab"));
     let mobileMenuTabs = Array.from(document.getElementsByClassName("mobile-menu-tab"));
     let mobileMenuTabsContainer = document.getElementsByClassName("mobile-menu-tabs")[0];

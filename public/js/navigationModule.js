@@ -1,7 +1,6 @@
 import setTopThreeProducts from './mostPopularProducts.js';
 import setOffer from './offer.js';
-import initializeTabs from './tabManager.js';
-import { openTab } from './tabManager.js';
+import { openTab, initializeTabs } from './tabManager.js';
 import initilizeNavbar from './navbar.js';
 import { initializeCart, setCartItems } from './cart.js';
 
