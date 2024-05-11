@@ -165,7 +165,7 @@ function createCartItem(item, cachedItem, cartList) {
     deleteProductBtn.addEventListener('click', () => {
         removeProduct(item.id, item.category, true);
         cartList.removeChild(cartListItem);
-
+        manageCartSectionGap();
         setOrderSummary();
     });
 
@@ -189,10 +189,20 @@ function createCartItem(item, cachedItem, cartList) {
         }
         if (completeRemoval) {
             cartList.removeChild(cartListItem);
+            manageCartSectionGap();
         }
 
         setOrderSummary();
     });
+}
+
+function manageCartSectionGap() {
+    const cartSection = document.querySelector('section.cart');
+    const cartList = document.querySelector('.cart .cart-list');
+
+    if (cartList.children.length === 0) {
+        cartSection.style.gap = '0';
+    }
 }
 
 export function setCartItems() {
@@ -204,11 +214,6 @@ export function setCartItems() {
 
         const cart = JSON.parse(localStorage.getItem('cart'));
 
-        if (cart.length === 0) {
-            const cartSection = document.querySelector('section.cart');
-            cartSection.style.gap = '0';
-        }
-
         cart.forEach(item => {
             let cachedItem;
             if (item.category === 'burger') {
@@ -218,6 +223,8 @@ export function setCartItems() {
             }
             createCartItem(item, cachedItem, cartList);
         })
+
+        manageCartSectionGap();
     })
 }
 
