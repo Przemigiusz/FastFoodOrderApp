@@ -202,7 +202,12 @@ export function setCartItems() {
 
         const cartList = document.querySelector('.cart .cart-list')
 
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cart = JSON.parse(localStorage.getItem('cart'));
+
+        if (cart.length === 0) {
+            const cartSection = document.querySelector('section.cart');
+            cartSection.style.gap = '0';
+        }
 
         cart.forEach(item => {
             let cachedItem;
