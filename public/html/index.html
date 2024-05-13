@@ -24,6 +24,21 @@
 
 <body>
     <main id="main"></main>
+    <template id="menu-tab-item-template">
+        <div class="menu-tab-item">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+            <div class="add-to-cart">
+                <p class="price"></p>
+                <svg viewBox="0 0 448 512">
+                    <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </template>
     <script type="module">
         import navigationModule from '/js/navigationModule.js';
         navigationModule.initialize().catch(console.error);
