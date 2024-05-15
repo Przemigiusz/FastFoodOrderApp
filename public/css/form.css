@@ -13,7 +13,6 @@
 
 .input-container {
     position: relative;
-    display: inline-block;
     flex: 1;
 }
 
@@ -46,7 +45,7 @@ input[type='checkbox'] {
 
 .form-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 1.5rem 0;
     width: 270px;
@@ -80,4 +79,10 @@ input[type='checkbox'] {
     left: 0;
     bottom: -2.5px;
     animation: grow-full 0.5s forwards;
+}
+
+.error {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: red;
 }

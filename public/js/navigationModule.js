@@ -3,6 +3,8 @@ import setOffer from './offer.js';
 import { openTab, initializeTabs } from './tabManager.js';
 import initilizeNavbar from './navbar.js';
 import { initializeCart, setCartItems } from './cart.js';
+import initializeLoginForm from './loginPage.js';
+import initializeRegistrationForm from './registrationPage.js';
 
 export default {
     pages: {},
@@ -29,6 +31,10 @@ export default {
             setOffer();
         } else if (href === '/cart') {
             setCartItems();
+        } else if (href === '/login') {
+            initializeLoginForm();
+        } else if (href === '/signup') {
+            initializeRegistrationForm();
         }
     },
 
