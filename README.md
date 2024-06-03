@@ -7,9 +7,13 @@ This is a web application project for ordering food from a local fast-food resta
 ## What Is Implemented
 
 * A module that manages a shopping cart.
+
 * A module that is used to fetch and cache offers from a local server.
+
 * Validation for both sign in and sign up forms.
+
 * Both Most Popular Products and Menu sections display content dynamically, based on data from the server.
+
 * Whole website is fully responsive.
 
 ## Technologies
