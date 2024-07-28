@@ -26,5 +26,5 @@ This is a web application project for ordering food from a local fast-food resta
 2. Navigate into the project directory: `cd FastFoodOrderApp`
 3. Install required dependencies: `npm install`
 4. Run JSON-Server: `npx json-server db.json`
-5. Run the main script (from root directory): `npx nodemon server.js`
-6. Open `localhost:5000` in a browser.
+5. Run the main script: `npx nodemon server.js`
+6. Open `localhost:5000` in a browser
